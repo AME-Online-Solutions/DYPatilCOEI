@@ -5,17 +5,17 @@ Global Styles
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700");
 
-@import url(bootstrap.min.css);
-@import url(font-awesome.min.css);
-/*@import url(fontfamilyssp.css);*/
-@import url(paddingmargin.css);
-@import url(animate.css);
-@import url(aos.css);
-@import url(hover.css);
-@import url(newsslider.css);
-@import url(footer.css);
-@import url(owl.carousel.min.css);
-@import url(owl.theme.default.min.css);
+@import url("index_files/bootstrap.min.css");
+@import url("index_files/font-awesome.min.css");
+/*@import url("index_files/fontfamilyssp.css");*/
+@import url("index_files/paddingmargin.css");
+@import url("index_files/animate.css");
+@import url("index_files/aos.css");
+@import url("index_files/hover.css");
+@import url("index_files/newsslider.css");
+@import url("index_files/footer.css");
+@import url("index_files/owl.carousel.min.css");
+@import url("index_files/owl.theme.default.min.css");
 
 
 body,html{background:#fff}
