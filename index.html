@@ -24,19 +24,19 @@ a{color:y;text-align: left;display: block;}
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #254636;
+  background-color: #ffffff;
   width: 100%;
   display: table;
   table-layout: fixed;
 }
 .navbar li {
   float: left;
-  display: table-cell;
+  display: block;
 }
 .navbar li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
+  display: block;
+  color: black;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -44,27 +44,26 @@ l.navbar i a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 .navbar li.dropdown{
-  display: inline-block;
+  display: block;
+  color:black;
 }
 .dropdown-content{
+  background-color: #f2f2f2;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  color:black;
 }
 .dropdown-content a{
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
   text-align: left;
 }
-.dropdown-content a:hover {background-color: #f1f1f1;}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.dropdown-content a:hover {color:black;background-color: #ff5050;}
+.dropdown:hover .dropdown-content {  display: block;}
 
 	
 	
@@ -377,7 +376,9 @@ img {vertical-align: middle;}
       <a href="#">Contact Numbers</a>
     </div>
   </li>
-
+  <div style="float: right;">
+    <li><a target="_blank" href="https://login.ameonlinesolutions.com" ><i class="fa fa-fw fa-user"></i>ERP Login</a></li>
+  </div>
 </ul>
 </div>
 
