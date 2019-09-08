@@ -4,6 +4,8 @@
 <title>DYPatilCOEI</title>
 <link rel="icon" href="index_files/dypeflogoFav.ico" type="image/icon type">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="index_files/style.css" type="text/css" /> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
 <style>
 * {
@@ -13,48 +15,35 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
+  background: #254636;
 }
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-
-
+a{color:y;text-align: left;display: block;}
 
 /* Style the top navigation bar */
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #254636;
   width: 100%;
   display: table;
   table-layout: fixed;
 }
-li {
+.navbar li {
   float: left;
   display: table-cell;
 }
-li a, .dropbtn {
+.navbar li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover, .dropdown:hover .dropbtn {
+l.navbar i a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
-li.dropdown{
+.navbar li.dropdown{
   display: inline-block;
 }
 .dropdown-content{
@@ -110,9 +99,10 @@ li.dropdown{
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #254636;
   padding: 15px;
   margin-top: 0px;
+  color:white;
 }
 
 /* Clear floats after the columns */
@@ -126,7 +116,7 @@ li.dropdown{
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #4d4d4d;
   margin-top: 20px;
 }
 
@@ -263,13 +253,13 @@ img {vertical-align: middle;}
 
 /* SCROLL NEWS  */
 .holder { 
-  background-color:#ccc;
+  background: #254636;
   width:100%;
   height:350px;
   overflow:hidden;
   padding:5px;
   font-family:Helvetica;
-  color:blue;
+  color:yellow;
 }
 .holder .mask {
   position: relative;
@@ -290,11 +280,31 @@ img {vertical-align: middle;}
   padding:5px;
 }
 .holder ul li a {
+  padding:5px;
   color:white;
   text-decoration:none;
 }
 
+/* Create three equal columns that floats next to each other */
+.Fcolumn {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 200px;
+}
+.Fcolumn2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 200px; 
+}
 
+/* Clear floats after the columns */
+.Frow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
@@ -304,12 +314,13 @@ img {vertical-align: middle;}
 
 <!--  HEADER  -->
 <div class="header">
-  <img src="index_files/DYPEFOnline Header.jpg" alt="dypefcoei"  >
+  <img src="index_files/DYPEFOnline Header.jpg" alt="dypefcoei"  width=100% >
 </div>
 
 
 
 <!--  NAV BAR  -->
+<div class="navbar">
 <ul>
   <li><a href="#home">Home</a></li>
 
@@ -368,24 +379,8 @@ img {vertical-align: middle;}
   </li>
 
 </ul>
+</div>
 
-
-
-
-
-
-
-
-<!--  ICON BAR  -->
-  <span>
-  <button class="facebook" style='font-size:24px'><i class="fa fa-facebook"></i></button>
-  <button class="twitter" style='font-size:24px'><i class="fa fa-twitter"></i></button>
-  <button class="google" style='font-size:24px'><i class="fa fa-google"></i></button>
-  <button class="linkedin" style='font-size:24px'><i class="fa fa-linkedin"></i></button>
-  <button class="youtube" style='font-size:24px'><i class="fa fa-youtube"></i></button>
-  <button style='background: white;vertical-align:top;width:34px;height:34px;padding:0px;margin:0px;'><img src="index_files/AME.jpg" height=24px width=24px ></a></button>
-  <a href="#clients">Live Online</a>
-  </span>
 
 
 
@@ -397,25 +392,25 @@ img {vertical-align: middle;}
         SLIDE SHOW  -->
         <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
           <img src="index_files/enggSlider-1.jpg" style="width:100%">
           <div class="text">Caption Text</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
           <img src="index_files/enggSlider-2.jpg" style="width:100%">
           <div class="text">Caption Two</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
           <img src="index_files/enggSlider-3.jpg" style="width:100%">
           <div class="text">Caption Three</div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides">
           <div class="numbertext">4 / 4</div>
           <img src="index_files/enggSlider-4.jpg" style="width:100%">
           <div class="text">Caption Four</div>
@@ -425,14 +420,14 @@ img {vertical-align: middle;}
         <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
         </div>
-        <br>
+        <!-- <br>
 
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
           <span class="dot" onclick="currentSlide(3)"></span> 
           <span class="dot" onclick="currentSlide(4)"></span> 
-        </div>
+        </div>  -->
         <script>
           //AUTO SLIDE SHOW
           var slideIndex = 0;
@@ -488,9 +483,11 @@ img {vertical-align: middle;}
     <div class="card">
       <h2>TITLE HEADING</h2>
       <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+       <p><video width="320" height="240" controls style="float: left;margin-right:5px;">
+        <source src="index_files/DYPEF_Film.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> 
+      <font style="font-size:24px;"><br>Courses at Dr. D. Y. Patil Educational Federation are designed to equip students with skills to meet the challenges and opportunities of the corporate world. Our value based learning model provides transformational experience that fosters professional, intellectual, and personal development.</font> </p>
     </div>
   </div>
   <div class="rightcolumn">
@@ -500,18 +497,18 @@ img {vertical-align: middle;}
 
         <div class="holder">
           <ul id="ticker01">
-            <li><span>10/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
-            <li><span>10/10/2007</span><a href="#">End up doing is adding some code</a></li>
-            <li><span>10/10/2007</span><a href="#">The code that you want to run</a></li>
-            <li><span>08/10/2007</span><a href="#">Inside of which is the code that you want to run</a></li>
-            <li><span>08/10/2007</span><a href="#">Right when the page is loaded</a></li>
-            <li><span>05/10/2007</span><a href="#">Problematically, however, the Javascript code</a></li>
-            <li><span>04/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
-            <li><span>04/10/2007</span><a href="#">End up doing is adding some code</a></li>
-            <li><span>04/10/2007</span><a href="#">The code that you want to run</a></li>
-            <li><span>03/10/2007</span><a href="#">Inside of which is the code that you want to run</a></li>
-            <li><span>03/10/2007</span><a href="#">Right when the page is loaded</a></li>
-            <li><span>01/10/2007</span><a href="#">Problematically, however, the Javascript code</a></li>
+            <li><span style="color:yellow;">10/10/2020</span><a href="#">Best wishes</a></li>
+            <li><span style="color:yellow;">10/10/2020</span><a href="#">Dr. D. Y. Patil<br>College of Engieering<br>and Innovation</a></li>
+            <li><span style="color:yellow;">08/10/2020</span><a href="#">Department of Mechanical Engineering</a></li>
+            <li><span style="color:yellow;">08/10/2020</span><a href="#">Department of Civil Engineering</a></li>
+            <li><span style="color:yellow;">05/10/2020</span><a href="#">Department of Computer Engineering</a></li>
+            <li><span style="color:yellow;">04/10/2020</span><a href="#">Department of First Year Engineering</a></li>
+            <li><span style="color:yellow;">10/10/2020</span><a href="#">AME ONLINE SOLUTIONS<br>welcomes you.</a></li>
+            <li><span style="color:yellow;">04/10/2020</span><a href="#">National conference on ...</a></li>
+            <li><span style="color:yellow;">04/10/2020</span><a href="#">Seminar on ...</a></li>
+            <li><span style="color:yellow;">03/10/2020</span><a href="#">Sports events ...</a></li>
+            <li><span style="color:yellow;">03/10/2020</span><a href="#">Cultural Program ...</a></li>
+            <li><span style="color:yellow;">01/10/2020</span><a href="#">Alumni Meet ...</a></li>
           </ul>
         </div>
         <script>
@@ -555,18 +552,84 @@ img {vertical-align: middle;}
 
     </div>
      <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Social</h2>
+<!--  ICON BAR  -->
+      <span>
+      <button class="facebook" style='font-size:24px'><i class="fa fa-facebook"></i></button>
+      <button class="twitter" style='font-size:24px'><i class="fa fa-twitter"></i></button>
+      <button class="google" style='font-size:24px'><i class="fa fa-google"></i></button>
+      <button class="linkedin" style='font-size:24px'><i class="fa fa-linkedin"></i></button>
+      <button class="youtube" style='font-size:24px'><i class="fa fa-youtube"></i></button>
+      
+      </span>
     </div>
    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <h3>Teaching-Learning</h3>
+      <span>
+       <li><button style='background: white;vertical-align:top;width:36px;height:36px;padding:0px;margin:0px;'><img src="index_files/AME.jpg" height=24px width=24px ></a></button></li>
+       <li><a href="#">Live Online</a></li>
+      </span>
     </div>
   </div>
 </div>
 <div class="footer">
-  <h2>Footer</h2>
+ <!--footer Section Start-->
+<div class="Frow">
+  <div class="Fcolumn">
+        <h4><img src="index_files/SPPULogo.png" alt="puneUniversity" width="64px" color=black style="float: left;margin-right:5px;" />
+        <!--<h6>Permanently </h6>-->
+        <!--<h2>Affiliated to Savitribai Phule, <strong>Pune University</strong></h2>-->
+        Affiliated to <br><b>SAVITRIBAI PHULE PUNE UNIVERSITY</b></h4>
+        <div class="col-12">
+            <h5>Approved by DTE(MS) & recognized by AICTE New Delhi.</h5>
+            <h5>Courses offered in <strong>Mechanical</strong>, <strong>Civil</strong> & <strong>Computer Engineering</strong></h5>
+            <h5><b>Institute PUN Code</b> : CMMP020350</h5>
+            <h5><b>Institute DTE CODE</b> : 6834</h5>
+            <h5><a href="http://www.unipune.ac.in/">http://www.unipune.ac.in/</a></h5>
+        </div>
+  </div>
+  <div class="Fcolumn2">
+    <div class="footer-widget" data-ng-controller="latestNewsController" data-ng-init="Events()">
+        <h3>Events</h3>
+        <ul class="list-unstyled" >                        
+            <li><a href="#">Event1</a></li>
+            <li><a href="#">Event2</a></li>
+            <li><a href="#">Event3</a></li>
+            <li><a href="#">Event4</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="Fcolumn2">
+    <div class="footer-widget">
+        <h3>Committee</h3>
+        <ul class="list-unstyled">                        
+            <li><a target="_blank" href="https://www.dypatilcoei.in/home/committee/anti-ragging-committee">Prohibition of ragging</a></li>
+            <li><a target="_blank" href="https://www.dypatilcoei.in/home/committee/grievance-committee">Grievance Redressal Committee </a></li>
+            <!--<li><a target="_blank" href="assets/files/SSS-MBA-2015-2016.pdf">Shikshan Shulka Samiti</a></li>-->
+            <!--<li><a target="_blank" href="">Minimum Disclosure</a></li>-->
+            <li><a target="_blank" href="#">Mandatory Disclosure</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="Fcolumn2">
+    <div>
+        <h3>Explore Links </h3>
+        <ul class="list-unstyled">
+            <li><a href="#">About College</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Events</a></li>                        
+            <li><a href="https://www.aicte-india.org/"> AICTE</a></li>
+            <li><a href="https://www.dtemaharashtra.gov.in/">DTE </a></li>                        
+        </ul>
+    </div> 
+  </div>
+</div>
+
+<!--Footer Section End--> 
+  
+  
 </div>
 
 </body>
